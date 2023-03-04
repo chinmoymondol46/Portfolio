@@ -17,9 +17,9 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/chinmoymondol46"><FaFacebookF/></a>
-        <a href="https://www.instagram.com/chinmoy.mondol.cm"><FiInstagram/></a>
-        <a href="https://twitter.com/chinmoymondol46"><IoLogoTwitter/></a>
+        <a href="https://www.facebook.com/chinmoymondol46" target='_blank'><FaFacebookF/></a>
+        <a href="https://www.instagram.com/chinmoy.mondol.cm" target='_blank'><FiInstagram/></a>
+        <a href="https://twitter.com/chinmoymondol46" target='_blank'><IoLogoTwitter/></a>
       </div>
 
       <div className="footer__copyright">
