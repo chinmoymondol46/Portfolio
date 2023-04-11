@@ -4,10 +4,16 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {AiOutlineProject} from 'react-icons/ai'
 import {AiOutlineContacts} from 'react-icons/ai'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#');
+  
+  useEffect(() => {
+    window.location.hash = "#";
+  }, []);
+
   return (
     <nav>
       <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
