@@ -7,6 +7,45 @@ import IMG4 from '../../assets/project4.jpg'
 import IMG5 from '../../assets/project5.jpg'
 import IMG6 from '../../assets/project6.jpg'
 
+const data = [
+  {
+    id: 1,
+    image: IMG1,
+    title: 'Keyword Density Checker - C#',
+    github:'https://github.com/chinmoymondol46/Keyword-Density-Checker-CSharp'
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Flower Classification Model - ML',
+    github:'https://github.com/chinmoymondol46/Flower-Classification-Model-CNN'
+  },  
+  {
+    id: 3,
+    image: IMG3,
+    title: 'Online Job Portal - PHP, JS',
+    github:'https://github.com/chinmoymondol46/Online-Job-Portal'
+  },  
+  {
+    id: 4,
+    image: IMG4,
+    title: 'Brick Breaker Game - C++',
+    github:'https://github.com/chinmoymondol46/Brick-Breaker-Game-CPP'
+  },  
+  {
+    id: 5,
+    image: IMG5,
+    title: 'Hospital Management System - C#',
+    github:'https://github.com/chinmoymondol46/Hospital-Management-System-CSharp'
+  },  
+  {
+    id: 6,
+    image: IMG6,
+    title: 'Super Shop Management System - Java',
+    github:'https://github.com/chinmoymondol46/Super-Shop-Management-System-Java'
+  }
+]
+
 const Projects = () => {
   return (
     <section id='projects'>
@@ -14,71 +53,22 @@ const Projects = () => {
       <h2>Personal Projects</h2>
 
       <div className='container project__container'>
-        <article className='project__item'>
-          <div className='project__item-img'>
-            <img src={IMG1} alt="Keyword Density Checker - C#"/>
-          </div>
+        {
+          data.map(({id, image, title, github}) => {
+            return(
+              <article key={id} className='project__item'>
+              <div className='project__item-img'>
+                <img src={image} alt={title}/>
+              </div>
 
-          <h3>Keyword Density Checker - C#</h3>
-          <div className='project__item-cta'>
-            <a href="https://github.com/chinmoymondol46/Keyword-Density-Checker-CSharp" className='btn' target='_blank'>GitHub</a>
-          </div>
-        </article>
-
-        <article className='project__item'>
-          <div className='project__item-img'>
-            <img src={IMG2} alt="Flower Classification Model - ML"/>
-          </div>
-
-          <h3>Flower Classification Model - ML</h3>
-          <div className='project__item-cta'>
-            <a href="https://github.com/chinmoymondol46/Flower-Classification-Model-CNN" className='btn' target='_blank'>GitHub</a>
-          </div>
-        </article>
-
-        <article className='project__item'>
-          <div className='project__item-img'>
-            <img src={IMG3} alt="Online Job Portal - PHP, JS"/>
-          </div>
-
-          <h3>Online Job Portal - PHP, JS</h3>
-          <div className='project__item-cta'>
-            <a href="https://github.com/chinmoymondol46/Online-Job-Portal" className='btn' target='_blank'>GitHub</a>
-          </div>
-        </article>
-
-        <article className='project__item'>
-          <div className='project__item-img'>
-            <img src={IMG4} alt="Brick Breaker Game - C++"/>
-          </div>
-
-          <h3>Brick Breaker Game - C++</h3>
-          <div className='project__item-cta'>
-            <a href="https://github.com/chinmoymondol46/Brick-Breaker-Game-CPP" className='btn' target='_blank'>GitHub</a>
-          </div>
-        </article>
-
-        <article className='project__item'>
-          <div className='project__item-img'>
-            <img src={IMG5} alt="Hospital Management System - C#"/>
-          </div>
-
-          <h3>Hospital Management System - C#</h3>
-          <div className='project__item-cta'>
-            <a href="https://github.com/chinmoymondol46/Hospital-Management-System-CSharp" className='btn' target='_blank'>GitHub</a>
-          </div>
-        </article>
-
-        <article className='project__item'>
-          <div className='project__item-img'>
-            <img src={IMG6} alt="Super Shop Management System - Java"/>
-          </div>
-
-          <h3>Super Shop Management System - Java</h3>
-          <div className='project__item-cta'>
-            <a href="https://github.com/chinmoymondol46/Super-Shop-Management-System-Java" className='btn' target='_blank'>GitHub</a>
-          </div>
-        </article>
+              <h3>{title}</h3>
+              <div className='project__item-cta'>
+                <a href={github} className='btn' target='_blank'>GitHub</a>
+              </div>
+              </article>
+            )
+          })
+        }
       </div>
     </section>
   )
