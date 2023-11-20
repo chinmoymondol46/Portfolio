@@ -1,2 +1,2 @@
 # Portfolio
-Planning on creating a one-page portfolio website mainly using react.js. This repository will contain the source code that I will use for this purpose. I will update this repository as I move forward.
+A single-page portfolio website primarily built using React and CSS to showcase my skills, projects, and experiences in a visually engaging and user-friendly manner.
