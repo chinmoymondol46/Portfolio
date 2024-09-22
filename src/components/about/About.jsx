@@ -25,7 +25,7 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>1.5+ years as a Software Engineer (QA)</small>
+              <small>3+ years as a Software Engineer (QA)</small>
             </article>
 
             <article className='about__card'>
@@ -36,7 +36,7 @@ const About = () => {
 
           </div>
           <p>
-            Hi, I'm Chinmoy Mondol, a Software Quality Assurance Engineer from Bangladesh with 1.5+ years of experience in the field. I have completed my bachelor's in Computer Science & Engineering with a gold medal (Summa Cum Laude) from American International University-Bangladesh. My strong foundation in testing methodologies and tools, combined with an analytical mindset and keen eye for detail, enables me to ensure the quality of software products. I am currently employed as a Software Engineer (QA) at TigerIT Bangladesh Limited, where I am dedicated to providing the best possible service to clients.
+            Hi, I'm Chinmoy Mondol, a Software Quality Assurance Engineer from Bangladesh with 3+ years of experience in the field. I have completed my bachelor's in Computer Science & Engineering with a gold medal (Summa Cum Laude) from American International University-Bangladesh. My strong foundation in testing methodologies and tools, combined with an analytical mindset and keen eye for detail, enables me to ensure the quality of software products. I am currently employed as a Software Engineer (QA) at TigerIT Bangladesh Limited, where I am dedicated to providing the best possible service to clients.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
